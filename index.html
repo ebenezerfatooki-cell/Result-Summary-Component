@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result Componet</title>
+    <link rel="stylesheet" href="">
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        section{
+            width: 100%;
+        }
+        .result{
+             background: linear-gradient(180deg,hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+             color: white;
+             padding: 20px 0;
+             border-radius:0 0 30px 30px;
+             width: 100%;
+             padding: 30px 0 50px 0;
+        }
+        h4{
+            text-align: center;
+            font-weight: lighter;
+            
+            
+        }
+        .number{
+            text-align: center;
+            background: linear-gradient( 0deg,hsla(252, 100%, 67%, 0.205), hsl(241, 81%, 54%));
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            margin: auto;
+            display: flex;
+    
+        }
+        .numb{
+            margin: auto;
+        }
+        .numb h1{
+            margin: 0;
+            padding: 0;
+            
+        }
+        .numb p{
+            padding: 0;
+            margin: 0;
+            
+        }
+        .result h2{
+            text-align: center;
+        }
+        .result .remark{
+            width: 80%;
+            margin: auto;
+            text-align: center;
+        }
+        .summary{
+            width: 85%;
+            margin: auto;
+            padding: 10px 0 50px 0;
+        }
+        .summary-text{
+            font-size: larger;
+            font-weight: 600;
+        }
+        .row{
+            margin: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 15px;
+            border-radius: 10px;
+        }
+        .row .all{
+            display: flex;
+            gap: 10px;
+        }
+        .row .all img{
+            width: 20px;
+        }
+        span{
+            margin: auto 0;
+            
+        }
+        span span{
+            font-weight: bold;
+        }
+        .reaction{
+            background-color: hsla(0, 100%, 67%, 0.103);
+        }
+        .reaction p{
+            color: hsl(0, 100%, 67%);
+        }
+        .memory{
+            background-color: hsla(39, 100%, 56%, 0.103);
+        }
+        .memory p{
+            color:  hsl(39, 100%, 56%);
+        }
+        .verbal p{
+            color:  hsl(166, 100%, 37%);
+        }
+        .verbal{
+            background-color:  hsla(166, 100%, 37%, 0.137);
+        }
+        .visual{
+            background-color:  hsla(234, 85%, 45%, 0.26);
+        }
+        .visual p{
+            color:  hsl(234, 85%, 45%);
+        }
+        button{
+            width: 100%;
+            border-radius: 28px;
+            padding: 20px;
+            margin: 10px 0;
+            color: white;
+            background-color:hsl(224, 30%, 27%);
+            border: none;
+            font-size: 20px;
+}
+    @media screen and (min-width:650px){
+       section{
+        width: 70%;
+        margin: auto;
+       }
+    }
+    @media screen and (min-width:750px){
+       section{
+        width: 55%;
+        margin: auto;
+       }
+    }
+    @media screen and (min-width:850px){
+       section{
+        width: 40%;
+        margin: auto;
+       }
+    }
+    @media screen and (min-width:900px){
+        body{
+            background-color: hsl(241, 100%, 89%);
+        }
+       section{
+        background-color: white;
+        width: 75%;
+        margin: 100px auto;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 20px ;
+        box-shadow:  8px 15px 30px hsla(0, 0%, 98%, 0.274);
+       }
+       .result{
+        width: 45%;
+        border-radius: 20px;
+       }
+       .summary{
+        width: 45%;
+       }
+       button{
+        cursor: pointer;
+       }
+       button:hover{
+        background: linear-gradient(0deg,hsl(241, 81%, 54%),hsl(252, 100%, 67%));
+       box-shadow: 3px 10px 15px hsl(241, 100%, 89%);
+    }
+    }
+        @media screen and (min-width:1000px){
+            section{
+                width: 50%;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+<section>
+    <div class="result">
+        <h4>Your Result</h4>
+        <div class="number">
+            <div class="numb">
+                <h1>76</h1>
+                <p>of 100</p>
+            </div>
+        
+        </div>
+
+        <h2>Great</h2>
+        <p class="remark">You scored higher than 65% of the people who have taken these tests.</p>
+    </div>
+        
+        <div class="summary">
+            
+            <p class="summary-text">Summary</p>
+            <div class="reaction row">
+                <div class="all">
+                        <img src="./assets/images/icon-reaction.svg" alt=""> 
+                    <p>Reaction</p>
+                </div>
+                    <span> <span>80 </span> / 100</span> 
+            </div> 
+            <div class="memory row" >
+                <div class="all">
+                        <img src="./assets/images/icon-memory.svg" alt="">
+                        <p>Memory</p>
+                </div>
+                    <span> <span>92 </span>  /100</span>
+            </div>
+                
+            <div class="verbal row">
+                <div class="all">
+                    <img src="./assets/images/icon-verbal.svg" alt="">
+                    <p>Verbal</p>
+                </div>
+                    <span> <span>61 </span>  /100</span>
+            </div>
+                
+            <div class="visual row">
+                <div class="all">
+                    <img src="./assets/images/icon-visual.svg" alt="">
+                    <p>Visual</p>
+                </div>
+                    <span>  <span>73 </span> / 100</span>
+            </div>
+            
+            <button>Continue</button>
+        </div>
+</section>
+      
+
+</body>
+</html>
